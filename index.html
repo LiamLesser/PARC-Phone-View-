@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>PARC — Philadelphia Amateur Radio Club</title>
+  <link rel="stylesheet" href="parc.css" />
+  <style>body { background: #0e0f13; }</style>
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ─── TOP HEADER ─────────────────────────── -->
+  <div class="top-header">
+    <div class="header-row">
+      <div class="header-logo">
+        <div class="header-logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+        </div>
+        <div class="header-logo-text">
+          PARC
+          <small>Philadelphia Amateur Radio</small>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="live-pill"><div class="live-dot"></div>146.685</div>
+        <a href="login.html" class="icon-btn" title="Sign In">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CONTENT ────────────────────────────── -->
+  <div class="content">
+
+    <!-- HOME -->
+    <div class="tab-panel active" id="tab-home">
+      <div class="hero-card">
+        <div class="hero-callsign">W3PHL · EST. 1947</div>
+        <h2>Philadelphia Amateur Radio Club</h2>
+        <p>Connecting the Philadelphia region through amateur radio. Join our weekly nets, operate our repeaters, and connect via EchoLink.</p>
+        <div class="hero-btns">
+          <a href="register.html" class="btn btn-orange">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            Join PARC
+          </a>
+          <a href="login.html" class="btn btn-ghost">Sign In</a>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-tile orange"><div class="lbl">Members</div><div class="val">142</div><div class="sub">+8 this year</div></div>
+        <div class="stat-tile green"><div class="lbl">Repeaters</div><div class="val">7 / 7</div><div class="sub">All online</div></div>
+        <div class="stat-tile"><div class="lbl">Nets / Week</div><div class="val">4</div><div class="sub">Mon Wed Fri Sun</div></div>
+        <div class="stat-tile"><div class="lbl">EchoLink</div><div class="val" style="font-size:1.1rem;font-family:'JetBrains Mono',monospace">W3PHL</div><div class="sub">Node #123456</div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Next Net</span><span class="pill active">Tonight</span></div>
+        <div class="net-row tonight">
+          <div class="net-day-badge"><div class="dw">Mon</div><div class="dd">14</div></div>
+          <div class="net-info"><h4>Monday Evening Technical Net</h4><p>NCS: KB3MNO · Open to all licensed amateurs</p></div>
+          <div class="net-freq"><div class="f">146.685</div><div class="t">8:00 PM ET</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Recent Activity</span><span class="card-action">See all</span></div>
+        <div class="activity-item"><div class="activity-avatar">KD3</div><div class="activity-body"><p><strong>KD3WXY</strong> checked into Monday Evening Net on 146.685</p></div><div class="activity-time">12m</div></div>
+        <div class="activity-item"><div class="activity-avatar">W3</div><div class="activity-body"><p><strong>W3PHL</strong> EchoLink node connected — 3 stations active</p></div><div class="activity-time">38m</div></div>
+        <div class="activity-item"><div class="activity-avatar">N3</div><div class="activity-body"><p><strong>N3ABX</strong> updated Field Day 2025 operating schedule</p></div><div class="activity-time">2h</div></div>
+        <div class="activity-item"><div class="activity-avatar">WA</div><div class="activity-body"><p><strong>WA3DEF</strong> joined PARC — Welcome!</p></div><div class="activity-time">1d</div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Primary Repeater</span><span class="pill online">Online</span></div>
+        <table class="data-table">
+          <tr><td class="name">Output</td><td>146.685 MHz</td></tr>
+          <tr><td class="name">Offset</td><td>-600 kHz</td></tr>
+          <tr><td class="name">CTCSS</td><td>100.0 Hz</td></tr>
+          <tr><td class="name">Location</td><td>Philadelphia, PA</td></tr>
+          <tr><td class="name">EchoLink</td><td>Node #123456</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Upcoming Events</span><span class="card-action" onclick="setTab('events')">All events</span></div>
+        <div class="list-row">
+          <div class="list-icon" style="background:rgba(255,106,0,0.12)"><svg viewBox="0 0 24 24" fill="#ff6a00"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg></div>
+          <div class="list-info"><h4>ARRL Field Day 2025</h4><p>Jun 28–29 · Fairmount Park</p></div>
+          <div class="list-right"><span class="pill active">26d</span></div>
+        </div>
+        <div class="list-row">
+          <div class="list-icon" style="background:rgba(59,130,246,0.12)"><svg viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
+          <div class="list-info"><h4>VE License Exam Session</h4><p>Jul 12 · Philadelphia Public Library</p></div>
+          <div class="list-right"><span class="pill info">4d</span></div>
+        </div>
+        <div class="list-row">
+          <div class="list-icon" style="background:rgba(46,213,115,0.12)"><svg viewBox="0 0 24 24" fill="#2ed573"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div>
+          <div class="list-info"><h4>Monthly Club Meeting</h4><p>Jul 17 · 7:30 PM · Club HQ</p></div>
+          <div class="list-right"><span class="pill online">11d</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ECHOLINK -->
+    <div class="tab-panel" id="tab-echolink">
+      <div class="page-title">EchoLink</div>
+      <div class="page-sub">VOIP connections to repeaters worldwide.</div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">PARC Node W3PHL-R</span><span class="pill online">Online</span></div>
+        <table class="data-table">
+          <tr><td class="name">Node Number</td><td>123456</td></tr>
+          <tr><td class="name">Linked Repeater</td><td>146.685 MHz</td></tr>
+          <tr><td class="name">Location</td><td>Philadelphia, PA (EM29)</td></tr>
+          <tr><td class="name">Active Connections</td><td>3</td></tr>
+          <tr><td class="name">Uptime</td><td>14 days 7 hrs</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">How to Connect</span></div>
+        <div class="info-box">
+          <div class="info-box-label">EchoLink App / Software</div>
+          <p>Search <strong>W3PHL-R</strong> or Node <strong>123456</strong> in the EchoLink directory</p>
+        </div>
+        <div class="info-box">
+          <div class="info-box-label">Via RF (146.685 MHz)</div>
+          <p>DTMF <strong>C123456</strong> to connect · <strong>#</strong> to disconnect</p>
+        </div>
+        <div class="info-box">
+          <div class="info-box-label">Conference Node</div>
+          <p>PARC Conference: <strong>*PARC*</strong> — open 24/7</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Active Connections</span><span class="card-badge">Live</span></div>
+        <table class="data-table">
+          <thead><tr><th>Callsign</th><th>Location</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="name">W3PHL-R</td><td>Philadelphia, PA</td><td><span class="pill online">Local</span></td></tr>
+            <tr><td class="name">WB4GHT-L</td><td>Atlanta, GA</td><td><span class="pill active">Linked</span></td></tr>
+            <tr><td class="name">K6ABC-R</td><td>Los Angeles, CA</td><td><span class="pill active">Linked</span></td></tr>
+            <tr><td class="name">VK2XYZ-L</td><td>Sydney, AU</td><td><span class="pill info">Monitor</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Nearby Nodes</span></div>
+        <div class="node-item"><div class="node-badge">W3</div><div class="node-info"><h4>W3PHI-R</h4><p>147.180 / PL 136.5 · Node 98765</p></div><span class="pill online">Online</span></div>
+        <div class="node-item"><div class="node-badge">K3</div><div class="node-info"><h4>K3CW-R</h4><p>444.925 / PL 100.0 · Node 87654</p></div><span class="pill online">Online</span></div>
+        <div class="node-item"><div class="node-badge">N3</div><div class="node-info"><h4>N3RAA-L</h4><p>224.180 / PL 110.9 · Node 76543</p></div><span class="pill offline">Offline</span></div>
+      </div>
+    </div>
+
+    <!-- REPEATERS -->
+    <div class="tab-panel" id="tab-repeaters">
+      <div class="page-title">Repeaters</div>
+      <div class="page-sub">7 repeaters across greater Philadelphia.</div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">All Repeaters</span><span class="card-badge">7/7 online</span></div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL — 146.685 MHz</h4><p>-600 kHz · PL 100.0 · 2m · Center City · EchoLink #123456</p></div><span class="pill online">Online</span>
+        </div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL-2 — 147.180 MHz</h4><p>+600 kHz · PL 136.5 · 2m · Northeast Philadelphia</p></div><span class="pill online">Online</span>
+        </div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL-3 — 444.925 MHz</h4><p>+5 MHz · PL 100.0 · 70cm · South Philadelphia · EchoLink #234567</p></div><span class="pill online">Online</span>
+        </div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL-4 — 443.300 MHz</h4><p>+5 MHz · PL 110.9 · 70cm · West Philadelphia</p></div><span class="pill online">Online</span>
+        </div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL-5 — 224.180 MHz</h4><p>-1.6 MHz · PL 100.0 · 1.25m · Germantown</p></div><span class="pill online">Online</span>
+        </div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL-6 — 927.5625 MHz</h4><p>-25 MHz · PL 100.0 · 33cm · Roxborough</p></div><span class="pill online">Online</span>
+        </div>
+        <div class="list-row">
+          <div class="list-info"><h4>W3PHL-D — 145.370 MHz</h4><p>-600 kHz · DCS 023 · 2m D-STAR · Mount Airy</p></div><span class="pill online">Online</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">CTCSS / DCS Quick Ref</span></div>
+        <table class="data-table">
+          <thead><tr><th>Tone</th><th>Repeater(s)</th></tr></thead>
+          <tbody>
+            <tr><td>100.0 Hz</td><td class="name">W3PHL, W3PHL-3, -5, -6</td></tr>
+            <tr><td>110.9 Hz</td><td class="name">W3PHL-4</td></tr>
+            <tr><td>136.5 Hz</td><td class="name">W3PHL-2</td></tr>
+            <tr><td>DCS 023</td><td class="name">W3PHL-D (D-STAR)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Coverage</span></div>
+        <p style="font-size:0.82rem;color:var(--text2);line-height:1.6">All repeaters cover the I-95/I-476 corridor. The 146.685 primary repeater covers ~50 mile radius from Center City. W3PHL + W3PHL-3 are linked via autopatch during Monday Evening Net.</p>
+      </div>
+    </div>
+
+    <!-- NETS -->
+    <div class="tab-panel" id="tab-nets">
+      <div class="page-title">Nets &amp; Schedule</div>
+      <div class="page-sub">4 weekly nets — all times Eastern, open to all licensed amateurs.</div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Weekly Schedule</span></div>
+        <div class="net-row tonight">
+          <div class="net-day-badge"><div class="dw">Mon</div><div class="dd">14</div></div>
+          <div class="net-info"><h4>Monday Evening Technical Net</h4><p>Equipment, antennas, technical discussion · NCS: KB3MNO</p></div>
+          <div class="net-freq"><div class="f">146.685</div><div class="t">8:00 PM</div></div>
+        </div>
+        <div class="net-row">
+          <div class="net-day-badge"><div class="dw">Wed</div><div class="dd">16</div></div>
+          <div class="net-info"><h4>Wednesday ARES/RACES Net</h4><p>Emergency comm training · NCS: Rotating</p></div>
+          <div class="net-freq"><div class="f">147.180</div><div class="t">7:30 PM</div></div>
+        </div>
+        <div class="net-row">
+          <div class="net-day-badge"><div class="dw">Fri</div><div class="dd">18</div></div>
+          <div class="net-info"><h4>Friday Night Roundtable</h4><p>Casual rag-chew, all topics welcome</p></div>
+          <div class="net-freq"><div class="f">146.685</div><div class="t">9:00 PM</div></div>
+        </div>
+        <div class="net-row">
+          <div class="net-day-badge"><div class="dw">Sun</div><div class="dd">20</div></div>
+          <div class="net-info"><h4>Sunday Morning HF Net</h4><p>20m SSB · NCS: WA3DEF</p></div>
+          <div class="net-freq"><div class="f">14.255</div><div class="t">9:00 AM</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Net Control Operators</span></div>
+        <table class="data-table">
+          <thead><tr><th>Net</th><th>NCS</th><th>Call</th></tr></thead>
+          <tbody>
+            <tr><td>Monday</td><td class="name">Michael Torres</td><td>KB3MNO</td></tr>
+            <tr><td>Wednesday</td><td class="name">Rotating</td><td>Multiple</td></tr>
+            <tr><td>Friday</td><td class="name">Open volunteer</td><td>—</td></tr>
+            <tr><td>Sunday HF</td><td class="name">Robert Davies</td><td>WA3DEF</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Participation Tips</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:2px">
+          <div style="display:flex;gap:10px;font-size:0.81rem;color:var(--text2);align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:5px"></div>Program your radio before the net — tone, offset, and frequency set in advance</div>
+          <div style="display:flex;gap:10px;font-size:0.81rem;color:var(--text2);align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:5px"></div>Wait for NCS to acknowledge you before transmitting traffic</div>
+          <div style="display:flex;gap:10px;font-size:0.81rem;color:var(--text2);align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:5px"></div>State your callsign phonetically on first contact</div>
+          <div style="display:flex;gap:10px;font-size:0.81rem;color:var(--text2);align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:5px"></div>New hams always welcome — NCS will guide you through check-in</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="tab-panel" id="tab-events">
+      <div class="page-title">Events</div>
+      <div class="page-sub">Upcoming club events and activities for 2025.</div>
+
+      <div class="card">
+        <div class="event-item">
+          <div class="event-date"><div class="mo">Jun</div><div class="dy">28</div></div>
+          <div class="event-body"><h4>ARRL Field Day 2025</h4><p>24-hour operating event at Fairmount Park, Belmont Plateau. All classes. Food provided!</p><div class="event-tags"><span class="pill active">Contest</span><span class="pill info">All Members</span></div></div>
+        </div>
+        <div class="event-item">
+          <div class="event-date"><div class="mo">Jul</div><div class="dy">12</div></div>
+          <div class="event-body"><h4>VE License Exam Session</h4><p>Tech, General &amp; Extra upgrades. Pre-registration required. Philadelphia Free Public Library, 6th floor.</p><div class="event-tags"><span class="pill online">Open to Public</span></div></div>
+        </div>
+        <div class="event-item">
+          <div class="event-date"><div class="mo">Jul</div><div class="dy">17</div></div>
+          <div class="event-body"><h4>Monthly Club Meeting</h4><p>Field Day debrief, repeater update, new member introductions. 7:30 PM · Club HQ, 1234 Arch St.</p><div class="event-tags"><span class="pill active">Meeting</span></div></div>
+        </div>
+        <div class="event-item">
+          <div class="event-date"><div class="mo">Jul</div><div class="dy">19</div></div>
+          <div class="event-body"><h4>ARRL Pennsylvania QSO Party</h4><p>Statewide contest. PARC coordinating club entry from Philadelphia county locations.</p><div class="event-tags"><span class="pill active">Contest</span><span class="pill info">HF + VHF</span></div></div>
+        </div>
+        <div class="event-item">
+          <div class="event-date"><div class="mo">Aug</div><div class="dy">9</div></div>
+          <div class="event-body"><h4>Antenna Building Workshop</h4><p>Dipole, vertical, and yagi antennas. Materials provided. Limited to 20 participants.</p><div class="event-tags"><span class="pill online">Workshop</span><span class="pill info">Limited Seats</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEMBERS (via More sheet) -->
+    <div class="tab-panel" id="tab-members">
+      <div class="page-title">Members</div>
+      <div class="page-sub">142 licensed operators across the Delaware Valley.</div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Club Officers 2025</span></div>
+        <div class="member-grid">
+          <div class="member-tile"><div class="member-av">JA</div><div class="member-call">W3JAB</div><div class="member-name">James Abramowitz</div><div class="member-role">President</div><div class="member-lic">Extra</div></div>
+          <div class="member-tile"><div class="member-av">SR</div><div class="member-call">KD3SRS</div><div class="member-name">Sandra Rivera</div><div class="member-role">Vice President</div><div class="member-lic">General</div></div>
+          <div class="member-tile"><div class="member-av">MT</div><div class="member-call">KB3MNO</div><div class="member-name">Michael Torres</div><div class="member-role">Secretary</div><div class="member-lic">Extra</div></div>
+          <div class="member-tile"><div class="member-av">RD</div><div class="member-call">WA3DEF</div><div class="member-name">Robert Davies</div><div class="member-role">Treasurer</div><div class="member-lic">Extra</div></div>
+          <div class="member-tile"><div class="member-av">LP</div><div class="member-call">N3LPQ</div><div class="member-name">Lisa Park</div><div class="member-role">Technical Officer</div><div class="member-lic">Extra</div></div>
+          <div class="member-tile"><div class="member-av">BH</div><div class="member-call">KC3BHT</div><div class="member-name">Brian Hoffman</div><div class="member-role">ARES Coord.</div><div class="member-lic">General</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Recent Members</span><span class="card-badge">Last 30 days</span></div>
+        <table class="data-table">
+          <thead><tr><th>Call</th><th>Name</th><th>License</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>WA3DEF</td><td class="name">Robert Davies</td><td>Extra</td><td><span class="pill online">Active</span></td></tr>
+            <tr><td>KD3WWX</td><td class="name">Angela Nguyen</td><td>Tech</td><td><span class="pill online">Active</span></td></tr>
+            <tr><td>N3ZZQ</td><td class="name">David Chen</td><td>General</td><td><span class="pill online">Active</span></td></tr>
+            <tr><td>KC3ZZT</td><td class="name">Marie Kowalski</td><td>General</td><td><span class="pill online">Active</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- RESOURCES (via More sheet) -->
+    <div class="tab-panel" id="tab-resources">
+      <div class="page-title">Resources</div>
+      <div class="page-sub">Links, tools, and club documents.</div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Learning &amp; Licensing</span></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(255,106,0,0.12)"><svg viewBox="0 0 24 24" fill="#ff6a00"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div><div class="list-info"><h4>ARRL Ham Radio License Manual</h4><p>Official study guide for all license classes</p></div><div class="list-right"><a href="#">Visit →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(59,130,246,0.12)"><svg viewBox="0 0 24 24" fill="#3b82f6"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div class="list-info"><h4>HamStudy.org</h4><p>Free question pool practice exams</p></div><div class="list-right"><a href="#">Visit →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(46,213,115,0.12)"><svg viewBox="0 0 24 24" fill="#2ed573"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div><div class="list-info"><h4>FCC ULS License Search</h4><p>Look up any FCC amateur callsign</p></div><div class="list-right"><a href="#">Visit →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(255,211,42,0.12)"><svg viewBox="0 0 24 24" fill="#ffd32a"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></div><div class="list-info"><h4>ARRL.org</h4><p>American Radio Relay League</p></div><div class="list-right"><a href="#">Visit →</a></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Operating Tools</span></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(255,106,0,0.12)"><svg viewBox="0 0 24 24" fill="#ff6a00"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div><div class="list-info"><h4>EchoLink</h4><p>VOIP gateway — connect to W3PHL-R</p></div><div class="list-right"><a href="#">Download →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(59,130,246,0.12)"><svg viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 3C7.95 3 4.21 4.34 1.2 6.6L3 9c2.5-1.88 5.62-3 9-3s6.5 1.12 9 3l1.8-2.4C19.79 4.34 16.05 3 12 3zm0 4c-2.97 0-5.67.91-7.9 2.44L6 12c1.73-1.3 3.87-2 6-2s4.27.7 6 2l1.9-2.56A13.94 13.94 0 0012 7zm0 4c-1.93 0-3.68.66-5.08 1.75L9 16c.86-.65 1.87-1 3-1s2.14.35 3 1l2.08-3.25A7.96 7.96 0 0012 11zm0 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg></div><div class="list-info"><h4>RepeaterBook</h4><p>National repeater directory with CHIRP support</p></div><div class="list-right"><a href="#">Visit →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(46,213,115,0.12)"><svg viewBox="0 0 24 24" fill="#2ed573"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div><div class="list-info"><h4>CHIRP Radio Programming</h4><p>Free open-source radio software</p></div><div class="list-right"><a href="#">Download →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(255,211,42,0.12)"><svg viewBox="0 0 24 24" fill="#ffd32a"><path d="M12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84z"/></svg></div><div class="list-info"><h4>APRS.fi</h4><p>Real-time APRS tracking map</p></div><div class="list-right"><a href="#">Visit →</a></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Club Documents</span></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(255,106,0,0.12)"><svg viewBox="0 0 24 24" fill="#ff6a00"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div><div class="list-info"><h4>Club Constitution &amp; Bylaws</h4><p>Adopted 2023, amended Jan 2025</p></div><div class="list-right"><a href="#">PDF →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(59,130,246,0.12)"><svg viewBox="0 0 24 24" fill="#3b82f6"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div><div class="list-info"><h4>ARES / RACES Emergency Plan</h4><p>Philadelphia County ARES protocols</p></div><div class="list-right"><a href="#">PDF →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(46,213,115,0.12)"><svg viewBox="0 0 24 24" fill="#2ed573"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div><div class="list-info"><h4>Meeting Minutes Archive</h4><p>All meeting minutes 2020–2025</p></div><div class="list-right"><a href="#">View →</a></div></div>
+        <div class="list-row"><div class="list-icon" style="background:rgba(255,211,42,0.12)"><svg viewBox="0 0 24 24" fill="#ffd32a"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div><div class="list-info"><h4>Membership Application</h4><p>Annual dues: $35/yr · $20 students</p></div><div class="list-right"><a href="register.html">Apply →</a></div></div>
+      </div>
+    </div>
+
+    <!-- ABOUT (via More sheet) -->
+    <div class="tab-panel" id="tab-about">
+      <div class="page-title">About PARC</div>
+      <div class="page-sub">Serving the Delaware Valley since 1947.</div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Our Mission</span></div>
+        <p style="font-size:0.83rem;color:var(--text2);line-height:1.7">The Philadelphia Amateur Radio Club (PARC), operating under callsign <strong style="color:var(--orange)">W3PHL</strong>, promotes the art and science of amateur radio communication and experimentation. We foster emergency preparedness, technical education, and camaraderie among licensed radio amateurs in the greater Philadelphia metro area.</p>
+        <div style="margin-top:12px">
+          <p style="font-size:0.83rem;color:var(--text2);line-height:1.7">PARC is affiliated with the ARRL and serves as the primary ARES group for Philadelphia County under the Philadelphia Office of Emergency Management.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span class="card-title">Contact</span></div>
+        <table class="data-table">
+          <tr><td class="name">Club Callsign</td><td>W3PHL</td></tr>
+          <tr><td class="name">Founded</td><td>1947</td></tr>
+          <tr><td class="name">Address</td><td>1234 Arch St, Philadelphia PA</td></tr>
+          <tr><td class="name">Grid Square</td><td>FN20</td></tr>
+          <tr><td class="name">Email</td><td>info@w3phl.org</td></tr>
+          <tr><td class="name">Trustee</td><td>W3JAB</td></tr>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <!-- ─── BOTTOM NAV (Liquid Glass) ─────────────── -->
+  <nav class="bottom-nav" id="bottom-nav">
+    <button class="nav-btn active" data-tab="home" onclick="setTab('home')">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      <span>Home</span>
+    </button>
+    <button class="nav-btn" data-tab="echolink" onclick="setTab('echolink')">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+      <span>EchoLink</span>
+    </button>
+    <button class="nav-btn" data-tab="repeaters" onclick="setTab('repeaters')">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.95 3 4.21 4.34 1.2 6.6L3 9c2.5-1.88 5.62-3 9-3s6.5 1.12 9 3l1.8-2.4C19.79 4.34 16.05 3 12 3zm0 4c-2.97 0-5.67.91-7.9 2.44L6 12c1.73-1.3 3.87-2 6-2s4.27.7 6 2l1.9-2.56A13.94 13.94 0 0012 7zm0 4c-1.93 0-3.68.66-5.08 1.75L9 16c.86-.65 1.87-1 3-1s2.14.35 3 1l2.08-3.25A7.96 7.96 0 0012 11zm0 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      <span>Repeaters</span>
+    </button>
+    <button class="nav-btn" data-tab="nets" onclick="setTab('nets')">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>
+      <span>Nets</span>
+    </button>
+    <button class="nav-btn" data-tab="events" onclick="setTab('events')">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+      <span>Events</span>
+    </button>
+    <button class="nav-btn" onclick="openSheet()">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      <span>More</span>
+    </button>
+  </nav>
+
+  <!-- ─── MORE SHEET ──────────────────────────── -->
+  <div class="sheet-overlay" id="sheet-overlay" onclick="closeSheet()"></div>
+  <div class="more-sheet" id="more-sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">More</div>
+    <a class="sheet-item" href="#" onclick="setTab('members'); closeSheet(); return false;">
+      <div class="sheet-item-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+      <div><div class="sheet-item-label">Members</div><div class="sheet-item-sub">Club roster &amp; officers</div></div>
+    </a>
+    <a class="sheet-item" href="#" onclick="setTab('resources'); closeSheet(); return false;">
+      <div class="sheet-item-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84zM17.5 13c-2.49 0-4.5 2.01-4.5 4.5S15.01 22 17.5 22s4.5-2.01 4.5-4.5S19.99 13 17.5 13zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM3 21.5h8v-8H3v8zm2-6h4v4H5v-4z"/></svg></div>
+      <div><div class="sheet-item-label">Resources</div><div class="sheet-item-sub">Links, tools &amp; documents</div></div>
+    </a>
+    <a class="sheet-item" href="#" onclick="setTab('about'); closeSheet(); return false;">
+      <div class="sheet-item-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></div>
+      <div><div class="sheet-item-label">About PARC</div><div class="sheet-item-sub">W3PHL · Est. 1947</div></div>
+    </a>
+    <a class="sheet-item" href="login.html">
+      <div class="sheet-item-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div>
+      <div><div class="sheet-item-label">Sign In</div><div class="sheet-item-sub">Member account</div></div>
+    </a>
+    <a class="sheet-item" href="register.html">
+      <div class="sheet-item-icon" style="background:var(--orange-d)"><svg viewBox="0 0 24 24" fill="#ff6a00"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+      <div><div class="sheet-item-label" style="color:var(--orange)">Join PARC</div><div class="sheet-item-sub">Become a member</div></div>
+    </a>
+    <button class="btn btn-ghost btn-full sheet-close" onclick="closeSheet()">Close</button>
+  </div>
+
+</div><!-- /app -->
+
+<script src="main.js"></script>
+</body>
+</html>
